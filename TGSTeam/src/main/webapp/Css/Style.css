@@ -1,0 +1,362 @@
+@charset "UTF-8";
+.Container{
+	/* text-align: center; */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+grid-auto-rows: minmax(60px, auto);
+	grid-template-areas:
+	
+	"menu menu menu"
+	"sidebar SlideImage SlideImage"
+	"sidebar SlideImage SlideImage"
+    "content content content"
+	"footer footer footer";
+	column-gap: 10px;
+	row-gap:10px;
+
+}
+
+.MenuBar{
+    height: 47px;
+    line-height: 47px;
+    border-radius: 5px;
+	grid-area: menu;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 300px 1fr;
+    grid-template-areas: 
+    "Logo menuIteam menuIteam menuIteam seach LoginOut";
+    background-color: #77C763; 
+}
+.MenuBar div{
+   
+}
+.Logo{
+    grid-area: Logo;
+    font-style: Arial;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.Header_menu{
+    grid-area: menuIteam;
+}
+.Header_menu>ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.Header_menu>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.Header_menuItem_Link{
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 20px 20px;
+}
+.Header_seach{
+    grid-area: seach;
+    text-align: center;
+    color: white;
+}
+.Header_seach>form>input{
+    height: 25px;
+    width: 200;
+    border-radius: 7px;
+    border: none;
+    margin-right: 0px; 
+}
+.Header_seach>form>button{
+background-color: white;
+border: none;
+height: 25px;
+border-radius: 10px;
+
+
+}
+.Header_LogInLogOut{
+    text-align: center;
+   
+}
+.Header_LogInLogOut a{
+text-decoration: none;
+margin-left: 5px;
+margin-right: 5px;
+color: white;
+}
+.SlideBar{
+    grid-area:  SlideImage;
+  
+}
+.Product{
+        width: 80%;
+		grid-area: content;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap:10px;
+  		margin: 0px auto;
+   
+}
+.Lists{
+    border-radius: 5px;
+     box-shadow: 0px 0px 5px grey;
+    display: grid;
+	grid-template-columns: 1fr;
+    border: 1px solid black;
+}
+.Lists_List{
+    display: block;
+    list-style: none;
+   line-height: 30px;
+   padding: 0px;
+ margin: 0 0 0 10px;
+}
+.Lists_List_Item_Link{
+    line-height: 35px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+    font-size: large;
+    border-radius: 5px;
+}
+.Lists_List_Item{
+    border-radius: 5px;
+    height: 35px;
+}
+.Lists_List>H3{
+    padding: 0px;
+    margin: 0px;
+    color: #999;
+    border-bottom: black 1px solid;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+/* .Header_LogInLogOut{
+grid-area: LogInOut;
+
+} */
+.prd{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+	
+	border: 1px solid grey;
+	height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px grey;
+       font-family: Arial, Helvetica, sans-serif;
+}
+.PriceProduct{
+    padding-top: 5px;
+    padding-bottom: 5px;
+width: 100%;
+text-align: center;
+height: 15px;
+line-height: 15px;
+
+}
+.NameProduct{
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    height: 15px;
+line-height: 15px;
+font-weight: bold;
+}
+.prd>img{
+    margin: 0px;
+    padding: 0px;
+    width: 70%;
+    height: 210px;
+  
+
+}
+.prd>button{
+    margin: 0px;
+    padding: 5px; 
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 10px;
+    
+    
+}
+
+.Footer{
+	grid-area: footer;
+	border: 1px solid black;
+}
+
+#item{
+	/* background-color: gold; */
+	/* border: 1px solid #dadada; */
+	
+	
+}
+.SlideBar{
+    min-height: 400px;
+    
+    float: right;
+    border-radius: 5px;
+    position: relative;
+}
+.SlideBar img{
+    border-radius: 5px;
+}
+.buttons{
+    width: 100%;
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+}
+.buttons button{
+    margin: 0 10px;
+    height: 30px;
+    width: 50px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#next{
+    height: 30px;
+    width: 50px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    position: absolute;
+    top: 180px;
+    right: 10px;
+  
+}
+
+#back{
+    height: 30px;
+    width: 50px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    position: absolute;
+    top: 180px;
+    left: 10px;
+}
+  .container_navbar1 h2{float: left;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.Footer{
+    border-top2: 2px solid #dadada ;
+    border-radius: 5px;
+    background-color: #85929E;
+    /* border-top:2px solid #85C750; */
+}
+.footer h3{
+    border-bottom: 1px solid #85C750;
+}
+.footerrow{
+    width: 25%;
+    min-height: 150px;
+    float: left;
+}
+.footer_list{
+    list-style: none;
+}
+.footer_list li{
+    padding-left: 0;
+}
+.footer_list li a{
+    padding-left: 0;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+}
+.footer_list li a:hover{
+    color: gray;
+}
+.BuyProduct{
+	border: 1px solid grey;
+	
+}
+.GioHang{
+    
+    
+    background-color: white;
+    border-radius:5px;
+ position: absolute;
+ z-index: 1;
+ display: none;
+}
+.Header_menu ul li:hover>.GioHang{
+	 display: block;
+	 width: 420px;
+	height: 400px;
+	 overflow:auto;
+    z-index: 1;
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: minmax(70px, auto);
+	
+}
+.title{
+	background-color: grey;
+	border-bottom: 1px solid black;	
+	display: grid;
+	grid-template-columns: 220px 100px 80px;
+	grid-auto-rows: minmax(40px, auto);
+	grid-template-areas:
+	"aa bb cc";
+}
+.title_SanPham{
+	grid-area: aa;
+}
+.title_DonGia{
+	grid-area: bb;
+	
+}
+.title_SoLuong{
+	grid-area: cc;
+}
+.Prdin{
+	height: 70px;
+	
+	margin-bottom: 3px;
+	border-bottom: solid 1px grey;
+	display: grid;
+	
+	grid-template-columns: 60px 160px 100px 55px 25px;
+	grid-auto-rows: minmax(40px, auto);
+	grid-template-areas:
+	"Hinh Ten Gia soLuong chon";
+}
+.Prdin_Hinh{
+	grid-area: Hinh;
+}
+.Prdin_Hinh img{
+	width: 55px;
+	height: 70px;
+	margin: 0px auto;
+}
+.Prdin_TenSP{
+	grid-area: Ten;
+}
+.Prdin_Gia{
+	grid-area: Gia;
+}
+.Prdin_SoLuong{
+	grid-area: soLuong;
+	background-color: yellow;
+	height: 20px;
+	width: 20px;
+	margin: auto 0px;
+}
+.Prdin_Select{
+	grid-area: chon;
+}
